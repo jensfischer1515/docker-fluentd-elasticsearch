@@ -1,4 +1,4 @@
-FROM fluent/fluentd:debian-onbuild
+FROM fluent/fluentd:v0.14-debian-onbuild
 MAINTAINER Jens Fischer <soth@gmx.net>
 
 RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev" \

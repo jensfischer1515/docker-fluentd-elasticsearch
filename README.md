@@ -6,7 +6,7 @@ Docker image for fluentd with Elasticsearch plugin
 Use `docker build` command to build the image.
 
 ```
-$ docker build -t jensfischerhh/docker-fluentd-elasticsearch:latest ./
+$ docker build -t jensfischerhh/docker-fluentd-elasticsearch:v0.14-debian ./
 ```
 
 ## Test
@@ -16,7 +16,7 @@ Following commands run fluentd sharing `./log` directory with the host machine:
 
 ```
 $ mkdir -p log
-$ docker run -it --rm --name fluentd -v $(pwd)/log:/fluentd/log jensfischerhh/docker-fluentd-elasticsearch:latest
+$ docker run -it --rm --name fluentd -v $(pwd)/log:/fluentd/log jensfischerhh/docker-fluentd-elasticsearch:v0.14-debian
 
 2017-06-25 18:35:35 +0000 [info]: reading config file path="/fluentd/etc/fluent.conf"
 2017-06-25 18:35:35 +0000 [info]: using configuration file: <ROOT>
